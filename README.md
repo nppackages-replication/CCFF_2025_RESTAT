@@ -11,13 +11,13 @@ https://nppackages.github.io/replication
 
 - U.S. Census (2013-2017): [American Community Survey](https://www.census.gov/programs-surveys/acs).
 
-- Dataset: [dta 1](CCFF_2023_ACS1.dta) | [dta 2](CCFF_2023_ACS2.dta)
+- Dataset: [dta 1](CCFF_2023--ACS1.dta) | [dta 2](CCFF_2023--ACS2.dta)
 
-- Python implementation: [main](CCFF_2023_ACS.py)
+- Python implementation: [main](CCFF_2023--ACS.py)
 
-- R implementation: [main](CCFF_2023_ACS.R)
+- R implementation: [main](CCFF_2023--ACS.R)
 
-- Stata implementation: [main](CCFF_2023_ACS.do)
+- Stata implementation: [main](CCFF_2023--ACS.do)
 
 
 ## Reference
