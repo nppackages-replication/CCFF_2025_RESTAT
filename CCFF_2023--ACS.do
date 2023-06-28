@@ -1,7 +1,6 @@
 ********************************************************************************
-* Replication "On Binscatter"
-* Cattaneo, Crump, Farrell and Feng (2022)
-* Date: 31-OCT-2022
+* Replication "Nonlinear Binscatter Methods"
+* Cattaneo, Crump, Farrell and Feng (2023)
 * ACS Application
 ********************************************************************************
 
@@ -12,7 +11,7 @@ clear all
 *global main ""
 cd "$main"
 
-use CCFF_2022_ACS_1, clear
+use CCFF_2023--ACS1, clear
 
 ********************************************************************************
 * Figure 1(a) Plain scatter
@@ -33,7 +32,7 @@ rename dots_fit y
 keep x y knots_ind line_x
 gen br=1
 
-append using CCFF_2022_ACS_1
+append using CCFF_2023--ACS1
 
 bysort br (x): replace knots_ind=1 if (_n==1 | _n==_N) & br==.
 bysort br (x): replace line_x=x if (_n==1 | _n==_N) & br==.
@@ -75,7 +74,7 @@ graph export "graphs/Census_BinscatterAndLine.png", replace
 ********************************************************************************
 * Figure 1(d) Demonstration of piecewise constant conditional mean estimate
 ********************************************************************************
-use CCFF_2022_ACS_1, clear
+use CCFF_2023--ACS1, clear
 binsreg y x, nbins(10) dots(F) line(0 0)  linegrid(1000) polyreg(1) lineplotopt(lcolor(black) lwidth(medthick)) polyregplotopt(lcolor(forest_green)) plotxrange(0,80000) graphregion(color(white) margin(large)) plotregion(lcolor(black)) ylabel(0(10)40, nogrid nogextend) ytitle("Percent Uninsured") xtitle("Per Capita Income") xlabel(0(20000)80000)
 graph export "graphs/Census_BinscatterAndCondExp.pdf", replace
 graph export "graphs/Census_BinscatterAndCondExp.png", replace
@@ -83,7 +82,7 @@ graph export "graphs/Census_BinscatterAndCondExp.png", replace
 ********************************************************************************
 * Figure 1(e) Confidence band
 ********************************************************************************
-use CCFF_2022_ACS_1, clear
+use CCFF_2023--ACS1, clear
 binsreg uninsuredRate perCapitaIncome, randcut(1) cb(T) plotxrange(0 80000) dotsplotopt(mcolor(black)) cbplotopt(fcolor(edkblue) fintensity(20) lwidth(none)) graphregion(color(white) margin(large)) plotregion(lcolor(black)) ylabel(0(10)40, nogrid nogextend) ytitle("Percent Uninsured") xtitle("Per Capita Income") legend(off)
 graph export "graphs/Census_CB_noControls.pdf", replace
 graph export "graphs/Census_CB_noControls.png", replace
@@ -91,7 +90,7 @@ graph export "graphs/Census_CB_noControls.png", replace
 ********************************************************************************
 * Figure 1(f) Conditional quantiles 90/50/10
 ********************************************************************************
-use CCFF_2022_ACS_1, clear
+use CCFF_2023--ACS1, clear
 binsqreg y x, quantile(.1) nodraw savedata($main/data/temp/tmp1f1_10) replace
 binsqreg y x, quantile(.5) nodraw savedata($main/data/temp/tmp1f1_50) replace
 binsqreg y x, quantile(.9) nodraw savedata($main/data/temp/tmp1f1_90) replace
@@ -110,7 +109,7 @@ graph export "graphs/Census_CQ_noControls.png", replace
 ********************************************************************************
 * Figure 2 Conditioning on covariates
 ********************************************************************************
-use CCFF_2022_ACS_1, clear
+use CCFF_2023--ACS1, clear
 /*
 binscatter y x, controls(percentBachelorsEdu medianAge percentHsEdu ueRate) linetype(none) graphregion(color(white) margin(large)) plotregion(lcolor(black)) ylabel(, nogrid nogextend) ytitle("Percent Uninsured") xtitle("Per Capita Income") xlabel(0(20000)80000)
 */
@@ -179,7 +178,7 @@ graph export "graphs/Census_binsreg_withParametricFit_withControls.png", replace
 * Figure 5 Two Sample Results
 ********************************************************************************
 
-use CCFF_2022_ACS_2, clear
+use CCFF_2023--ACS2, clear
 
 binsreg uninsuredRate  perCapitaIncome , by(idxpopdens) cb(T) randcut(1) plotxrange(0 80000) dotsplotopt(msize(small)) graphregion(color(white) margin(large)) plotregion(lcolor(black)) ylabel(, nogrid nogextend) ytitle("Percent Uninsured") xtitle("Per Capita Income") legend(order(1 "High Pop. Density States" 3 "Low Pop. Density States")) ylabel(0(10)30, nogrid nogextend)
 graph export "graphs/Census_binsreg_byPopDensity.pdf", replace
@@ -194,7 +193,7 @@ graph export "graphs/Census_binsreg_byPopDensity_withControls.png", replace
 * Figures 3 and Table 1
 ********************************************************************************
 
-use CCFF_2022_ACS_1, clear
+use CCFF_2023--ACS1, clear
 
 * Make controls evaluation points
 summ percentBachelorsEdu medianAge percentHsEdu ueRate, de

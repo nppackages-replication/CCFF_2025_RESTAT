@@ -1,9 +1,7 @@
 ################################################################################
-# Replication "On Binscatter"
-# Cattaneo, Crump, Farrell and Feng (2022)
-# Date: 31-OCT-2022
+# Replication "Nonlinear Binscatter Methods"
+# Cattaneo, Crump, Farrell and Feng (2023)
 # ACS Application
-# source("CCFF_2022_Binscatter_ACS.R")
 ################################################################################
 
 rm(list=ls())
@@ -13,7 +11,7 @@ library(binsreg)
 library(ggplot2)
 library(dplyr)
 
-data <- read_dta(file='CCFF_2022_ACS_1.dta')
+data <- read_dta(file='CCFF_2023--ACS1.dta')
 data <- subset(data, select=c(uninsuredRate,perCapitaIncome,percentBachelorsEdu,medianAge,percentHsEdu,ueRate))
 
 ################################################################################
@@ -225,7 +223,7 @@ binstest(data$uninsuredRate, data$perCapitaIncome, w, randcut=1, testshaper=0, d
 ####################################################################################
 # (5) Two-Sample comparison
 ####################################################################################
-data3 <- read_dta(file='CCFF_2022_ACS_2.dta')
+data3 <- read_dta(file='CCFF_2023--ACS2.dta')
 w3 <- select(data3, c('percentBachelorsEdu','medianAge','percentHsEdu','ueRate'))
 
 res <- binsreg(data3$uninsuredRate, data3$perCapitaIncome, by=data3$idxpopdens, cb=T, randcut=1, legendTitle="Population Density")
