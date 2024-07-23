@@ -11,7 +11,7 @@ https://nppackages.github.io/replication
 
 - U.S. Census (2013-2017): [American Community Survey](https://www.census.gov/programs-surveys/acs).
 
-- Dataset: [csv 1](CCFF_2024_ACS_1.dta) | [csv 2](CCFF_2024_ACS_2.dta)
+- Dataset: [csv 1](CCFF_2024_ACS_1.csv) | [csv 2](CCFF_2024_ACS_2.csv)
 
 - R implementation: [main](CCFF_2024_ACS.R)
 
