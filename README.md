@@ -11,19 +11,16 @@ https://nppackages.github.io/replication
 
 - U.S. Census (2013-2017): [American Community Survey](https://www.census.gov/programs-surveys/acs).
 
-- Dataset: [dta 1](CCFF_2023--ACS1.dta) | [dta 2](CCFF_2023--ACS2.dta)
+- Dataset: [csv 1](CCFF_2024_ACS_1.dta) | [csv 2](CCFF_2024_ACS_2.dta)
 
-- Python implementation: [main](CCFF_2023--ACS.py)
+- R implementation: [main](CCFF_2024_ACS.R)
 
-- R implementation: [main](CCFF_2023--ACS.R)
-
-- Stata implementation: [main](CCFF_2023--ACS.do)
 
 
 ## Reference
 
-- Cattaneo, Crump, Farrell and Feng (2023): [Nonlinear Binscatter Methods](https://nppackages.github.io/references/Cattaneo-Crump-Farrell-Feng_2023_NonlinearBinscatter.pdf).<br>
+- Cattaneo, Crump, Farrell and Feng (2024): [Nonlinear Binscatter Methods](https://nppackages.github.io/references/Cattaneo-Crump-Farrell-Feng_2024_NonlinearBinscatter.pdf).<br>
 Working paper.<br>
-[Supplemental Appendix](https://nppackages.github.io/references/Cattaneo-Crump-Farrell-Feng_2023_NonlinearBinscatter--Supplemental.pdf).
+[Supplemental Appendix](https://nppackages.github.io/references/Cattaneo-Crump-Farrell-Feng_2024_NonlinearBinscatter--Supplemental.pdf).
 
 <br><br>
