@@ -1,4 +1,4 @@
-# Cattaneo, Crump, Farrell and Feng (2023)
+# Cattaneo, Crump, Farrell and Feng (2025, RESTAT)
 
 This work was supported in part by the National Science Foundation through grants [SES-1947805](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1947805), [SES-2021432](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2021432), and [SES-2241575](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2241575).
 
@@ -19,8 +19,8 @@ https://nppackages.github.io/replication
 
 ## Reference
 
-- Cattaneo, Crump, Farrell and Feng (2024): [Nonlinear Binscatter Methods](https://nppackages.github.io/references/Cattaneo-Crump-Farrell-Feng_2024_NonlinearBinscatter.pdf).<br>
-Working paper.<br>
-[Supplemental Appendix](https://nppackages.github.io/references/Cattaneo-Crump-Farrell-Feng_2024_NonlinearBinscatter--Supplemental.pdf).
+- Cattaneo, Crump, Farrell and Feng (2025): [Nonlinear Binscatter Methods](https://nppackages.github.io/references/Cattaneo-Crump-Farrell-Feng_2025_RESTAT.pdf).<br>
+_Review of Economics and Statistics_, revise and resubmit.<br>
+[Supplemental Appendix](https://nppackages.github.io/references/Cattaneo-Crump-Farrell-Feng_2025_RESTAT--Supplemental.pdf)
 
 <br><br>
