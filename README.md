@@ -19,8 +19,8 @@ https://nppackages.github.io/replication
 
 ## Reference
 
-- Cattaneo, Crump, Farrell and Feng (2025): [Nonlinear Binscatter Methods](https://nppackages.github.io/references/Cattaneo-Crump-Farrell-Feng_2025_RESTAT.pdf).<br>
+- Cattaneo, Crump, Farrell and Feng (2025): [Nonlinear Binscatter Methods](https://nppackages.github.io/references/Cattaneo-Crump-Farrell-Feng_2026_RESTAT.pdf).<br>
 _Review of Economics and Statistics_, revise and resubmit.<br>
-[Supplemental Appendix](https://nppackages.github.io/references/Cattaneo-Crump-Farrell-Feng_2025_RESTAT--Supplemental.pdf)
+[Supplemental Appendix](https://nppackages.github.io/references/Cattaneo-Crump-Farrell-Feng_2026_RESTAT--Supplemental.pdf)
 
 <br><br>
