@@ -1,6 +1,6 @@
-# Cattaneo, Crump, Farrell and Feng (2025, RESTAT)
+# Cattaneo, Crump, Farrell and Feng (2026, RESTAT)
 
-This work was supported in part by the National Science Foundation through grants [SES-1947805](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1947805), [SES-2021432](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2021432), and [SES-2241575](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2241575).
+This work was supported in part by the National Science Foundation through grants [SES-1947805](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1947805), [SES-2019432](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2019432), and [SES-2241575](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2241575).
 
 ## Website
 
@@ -11,15 +11,19 @@ https://nppackages.github.io/replication
 
 - U.S. Census (2013-2017): [American Community Survey](https://www.census.gov/programs-surveys/acs).
 
-- Dataset: [csv 1](CCFF_2024_ACS_1.csv) | [csv 2](CCFF_2024_ACS_2.csv)
+- Dataset: [csv 1](CCFF_2026_ACS_1.csv) | [csv 2](CCFF_2026_ACS_2.csv)
 
-- R implementation: [main](CCFF_2024_ACS.R)
+- R implementation: [main](CCFF_2026_ACS_RESTAT.R)
+
+- Stata implementation: [main](CCFF_2026_ACS_RESTAT.do)
+
+- Python implementation: [main](CCFF_2026_ACS_RESTAT.py)
 
 
 
 ## Reference
 
-- Cattaneo, Crump, Farrell and Feng (2025): [Nonlinear Binscatter Methods](https://nppackages.github.io/references/Cattaneo-Crump-Farrell-Feng_2026_RESTAT.pdf).<br>
+- Cattaneo, Crump, Farrell and Feng (2026): [Nonlinear Binscatter Methods](https://nppackages.github.io/references/Cattaneo-Crump-Farrell-Feng_2026_RESTAT.pdf).<br>
 _Review of Economics and Statistics_, revise and resubmit.<br>
 [Supplemental Appendix](https://nppackages.github.io/references/Cattaneo-Crump-Farrell-Feng_2026_RESTAT--Supplemental.pdf)
 
